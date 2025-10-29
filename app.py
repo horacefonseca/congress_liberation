@@ -214,6 +214,13 @@ def display_representative(rep: dict):
             if rep['region']:
                 st.caption(f"📍 {rep['region']}")
 
+            # Election Information
+            if rep.get('next_general_election'):
+                if '2026' in rep['next_general_election']:
+                    st.info(f"🗳️ **Up for election:** {rep['next_general_election']}")
+                else:
+                    st.caption(f"🗳️ Next election: {rep['next_general_election']}")
+
         # Funding Transparency Section
         st.markdown("---")
         st.markdown("### 💰 Campaign Funding Transparency")
