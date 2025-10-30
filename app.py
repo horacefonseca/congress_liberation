@@ -468,7 +468,7 @@ def show_about_page():
     #### Data Sources
 
     - Representative contact information: Official House.gov and Senate.gov directories
-    - Campaign funding: User-provided data (continuously updated)
+    - Campaign funding: Federal Election Commission (FEC) 2023-2024 election cycle data
 
     #### How to Help
 
