@@ -74,6 +74,36 @@ This folder contains all planning and analysis documents for the Congress Connec
 
 ---
 
+### 4. PROCESS_FLOW.md
+**Status:** Production documentation (Version 1.0)
+**Purpose:** Visual process flows and architecture diagrams for deployed application
+**Audience:** Developers, reviewers, and anyone understanding system design
+**Recommendation:** **VIEW THIS TO UNDERSTAND HOW THE APP WORKS**
+
+**10 Visual Diagrams Included:**
+1. ✅ User Journey Flow - Complete user interaction paths
+2. ✅ Technical Architecture - System components and relationships
+3. ✅ Data Flow Architecture - Data sources to end user
+4. ✅ ZIP Code Search Process - Search logic and fallbacks
+5. ✅ Database Query Flow - Detailed sequence diagrams
+6. ✅ Representative Profile Display - UI component flow
+7. ✅ Browse & Filter Flow - Filtering logic and display
+8. ✅ Call Script Generator - Script generation process
+9. ✅ Data Update Pipeline - How data is maintained
+10. ✅ Privacy-First Architecture - Zero-tracking design
+
+**Key Benefits:**
+- Understand complete application architecture
+- See data flow from source to user
+- Follow user interaction patterns
+- Review privacy-preserving design
+- Visualize future enhancement paths
+
+**Format:** Mermaid diagrams (GitHub renders natively)
+**Use Cases:** Onboarding new developers, academic presentations, code reviews
+
+---
+
 ## Decision Matrix: Which Approach Should You Use?
 
 ### Choose ORIGINAL PLAN if:
@@ -265,6 +295,7 @@ Visit these to understand existing solutions:
 | 2025-10-28 | 1.1 | Critical analysis added (8 flaws identified) |
 | 2025-10-28 | 2.0 | Improved proposal created (addresses all flaws) |
 | 2025-10-28 | 2.1 | Documentation organized, README created |
+| 2025-10-29 | 3.0 | Process flow diagrams added (10 visual diagrams) |
 
 ---
 

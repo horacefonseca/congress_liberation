@@ -57,7 +57,30 @@ congress_liberation/
 ├── .streamlit/
 │   └── config.toml                 # Streamlit configuration
 └── docs/                           # Project documentation
+    ├── PROCESS_FLOW.md             # Visual process flows (10 diagrams)
+    ├── FINAL_IMPLEMENTATION_PLAN.md
+    ├── IMPROVED_PROJECT_PROPOSAL.md
+    └── CRITICAL_ANALYSIS.md
 ```
+
+## Documentation
+
+### Process Flow Diagrams
+View comprehensive visual documentation: **[docs/PROCESS_FLOW.md](docs/PROCESS_FLOW.md)**
+
+Includes 10 detailed Mermaid diagrams:
+- User Journey Flow
+- Technical Architecture
+- Data Flow Architecture
+- ZIP Code Search Process
+- Database Query Flow
+- Representative Profile Display
+- Browse & Filter Flow
+- Call Script Generator Flow
+- Data Update Pipeline
+- Privacy-First Architecture
+
+Perfect for understanding system design, onboarding developers, or academic presentations.
 
 ## Data Updates
 
