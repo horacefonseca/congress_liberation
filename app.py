@@ -320,12 +320,13 @@ def display_representative(rep: dict):
             topic = st.selectbox(
                 "What are you calling about?",
                 ["Healthcare", "Education", "Climate Change", "Immigration",
-                 "Economy/Jobs", "Gun Policy", "Other"]
+                 "Economy/Jobs", "Gun Policy", "Other"],
+                key=f"topic_{rep['id']}"
             )
 
-            if st.button("Generate Call Script"):
+            if st.button("Generate Call Script", key=f"script_btn_{rep['id']}"):
                 script = generate_call_script(rep, topic)
-                st.text_area("Your Call Script:", script, height=200)
+                st.text_area("Your Call Script:", script, height=200, key=f"script_area_{rep['id']}")
                 st.info("Tip: Feel free to personalize this script with your own story!")
 
         st.markdown("---")
