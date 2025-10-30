@@ -317,16 +317,17 @@ def display_representative(rep: dict):
         # Call Script Generator
         st.markdown("---")
         with st.expander("💬 Need help contacting? Get a call script"):
+            rep_key = f"{rep['last_name']}_{rep['first_name']}_{rep.get('district', 'senate')}"
             topic = st.selectbox(
                 "What are you calling about?",
                 ["Healthcare", "Education", "Climate Change", "Immigration",
                  "Economy/Jobs", "Gun Policy", "Other"],
-                key=f"topic_{rep['id']}"
+                key=f"topic_{rep_key}"
             )
 
-            if st.button("Generate Call Script", key=f"script_btn_{rep['id']}"):
+            if st.button("Generate Call Script", key=f"script_btn_{rep_key}"):
                 script = generate_call_script(rep, topic)
-                st.text_area("Your Call Script:", script, height=200, key=f"script_area_{rep['id']}")
+                st.text_area("Your Call Script:", script, height=200, key=f"script_area_{rep_key}")
                 st.info("Tip: Feel free to personalize this script with your own story!")
 
         st.markdown("---")
